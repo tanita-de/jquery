@@ -1,0 +1,8 @@
+.back {
+  margin-top: 1000px;
+  display: inline-block;
+  background: #0bd;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src=jquery-3.3.1.min.js></script>
+</head>
+<body>
+  <div class="box1">BOX1
+    <div class="btn">ボタン</div>
+    <div class="box2">BOX2</div>
+  </div>
+
+<script>
+$(function(){
+  $(".btn").hover(function(){
+      $(".box2").animate({
+          opacity:1,
+          top:-5
+        },800)},
+      function(){
+        $(".box2").animate({
+          opacity:0,
+          top:0,
+          left:0
+        },800)});
+})
+</script>
+</body>
+</html>
